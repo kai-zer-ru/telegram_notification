@@ -1,0 +1,12 @@
+{
+  "name" : "telegram_notification",
+  "title" : "Telegram notification class",
+  "description" : null,
+  "dependencies" : {
+    "@jetbrains/youtrack-scripting-api" : "^2018.3.46358"
+  },
+  "youtrack" : {
+    "autoAttached" : false,
+    "readOnly" : false
+  }
+}
