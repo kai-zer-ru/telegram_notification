@@ -1,10 +1,28 @@
 # telegram_notification
 
-Для активации импортируйте в свой workflow данный скрипт
+## Установка
+
+Для установки расширения необходимо:
+ - скачать самый свежий релиз по ссылке https://github.com/kaizer666/telegram_notification/releases
+ - перейти на страницу `/admin/workflows` в Вашем `Youtrack`, к примеру https://youtrack.mycompany.com/admin/workflows
+ - Нажать "Импортировать рабочий процесс" или "Import workflow"
+
+## Использование
+
+ - импортируйте в свой workflow данный скрипт
 
 ```javascript
 var telegram = require('telegram_notification/telegram');
+```
+ - передайте в конструктор объекта токен Вашего бота
+
+```
 var telegramClient = new telegram.Telegram("BOT:TOKEN");
+```
+
+ - отправьте сообщение в нужный чат (либо пользователю) по его ID в Telegram
+
+```
 telegramClient.sendMessage(chatId, text);
 ```
 
